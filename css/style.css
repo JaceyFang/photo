@@ -1,0 +1,52 @@
+﻿*{padding:0;margin:0;}
+.clear{clear:both;overflow:hidden;}
+ul{list-style:none;}
+.container{width:800px;margin:50px auto;}
+.container li{
+	float:left;
+	width:170px;
+	margin:15px 10px;
+	padding:5px;
+	border-radius:5px;
+	box-shadow:0 0 2px rgba(0,0,0,.5);
+}
+
+.container li img{
+	width:170px;
+	height:120px;
+	border-radius:5px;
+	vertical-align:bottom;
+}
+/*1.使照片墙艺术倾斜	2.添加动态效果*/
+/*noinspection ALL*/
+.container li:nth-child(1){
+    transform: rotate(30deg);
+}
+.container li:nth-child(2){
+	transform: rotate(-15deg);
+}
+.container li:nth-child(3){
+    transform: rotate(30deg);
+}
+.container li:nth-child(4){
+	transform: rotate(-15deg);
+}
+.container li:nth-child(5){
+	transform: rotate(30deg);
+}
+.container li:nth-child(6){
+	transform: rotate(-15deg);
+}
+.container li:nth-child(7){
+	transform: rotate(30deg);
+}
+.container li:nth-child(8){
+	transform: rotate(-15deg);
+}
+/*鼠标移动到照片位置，照片恢复原位，同时还要有缩放效果*/
+/*hover表示鼠标移动到图片上面，rotate表示旋转，正数值表示顺时针，负表示逆时针*/
+/*scale表示放大	X轴Y轴同时放大，scaleX表示横向放大，scaleY表示纵向放大*/
+/*scale后面的数值为负数的话图片会放大，但是图片显示为镜像（翻转）*/
+.container li:hover{
+	transform:rotate(0deg) scale(1.1);
+}
